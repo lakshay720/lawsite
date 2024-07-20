@@ -60,7 +60,7 @@ export default function RootLayout({
               className="w-12 h-12 mr-4"
             />
             <h1 className="text-center font-serif text-4xl">
-              Advocate Kumar Laksya & Associates
+              Advocate Kumar Lakshay & Associates
             </h1>
           </div>
           <div className="w-full md:w-[1000px] lg:w-[1000px] h-[1px] bg-black mb-4"></div>

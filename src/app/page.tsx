@@ -50,7 +50,7 @@ export default function Home() {
     <div className="min-h-screen py-2">
       <div className="w-full h-[600px] flex flex-col md:flex-row lg:flex-row pl-12 pr-12 pt-4 md:pl-[8rem] md:pr-[8rem] lg:pl-[8rem] lg:pr-[8rem] xl:pl-[20rem] xl:pr-[20rem] md:pt-24 lg:pt-24 gap-6 border-b-2 border-black">
         <div className="w-full md:w-1/2 lg:w-1/2 flex flex-col justify-center text-3xl md:text-5xl lg:5xl font-serif">
-          Advocate Kumar Laksya & Associates Welcomes You
+          Advocate Kumar Lakshay & Associates Welcomes You
           <span className=" font-sans text-xl">
             {" "}
             <br /> Experience. Respect. Results.
@@ -72,7 +72,7 @@ export default function Home() {
       </div>
       <div className="h-[300px] mt-12 flex flex-col justify-center items-center gap-10">
         <span className=" font-thin font-serif text-center text-2xl">
-          Advocate Kumar Laksya & Associates Client
+          Advocate Kumar Lakshay & Associates Client
         </span>
         <div className="flex flex-col text-center gap-3">
           <span className="text-lg font-light">Legal Success</span>

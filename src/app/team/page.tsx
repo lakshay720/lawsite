@@ -10,7 +10,7 @@ const slideImage = [
   },
   {
     url: "images/IMG6.jpg",
-    caption: "Kumar Lakshay Experience - 8 years",
+    caption: "Advocate Kumar Laksya",
   },
 ];
 

@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 
 const FloatingWhatsAppButton: React.FC = () => {
-    const phoneNumber = '+918307958345'; // Replace with your phone number in international format
+    const phoneNumber = '+918755507006'; // Replace with your phone number in international format
 
     return (
         <a

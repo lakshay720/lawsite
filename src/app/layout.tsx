@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -17,8 +17,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [scrollY, setScrollY] = useState<any>(0);
-  const [sticky, setSticky] = useState<boolean>(false);
+
+  const [scrollY, setScrollY] = useState<any>(0)
+  const [sticky, setSticky] = useState<boolean>(false)
 
   const handleScroll = () => {
     if (typeof window !== "undefined") {
@@ -27,61 +28,68 @@ export default function RootLayout({
   };
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
+    if (typeof window === "undefined")
+      return
     // Attach the scroll event listener when the component mounts
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     // Clean up the event listener when the component unmounts
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   useEffect(() => {
     if (scrollY > 0) {
-      setSticky(true);
-    } else {
-      setSticky(false);
+      setSticky(true)
     }
-  }, [scrollY]);
+    else {
+      setSticky(false)
+    }
+  }, [scrollY])
 
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div
-          className={`sticky top-0 z-50 flex flex-col justify-center items-center w-full bg-white ${
-            scrollY ? "shadow-md" : ""
-          }`}
-        >
+        <div className={`sticky top-0 z-50 flex flex-col justify-center items-center w-full bg-white ${scrollY ? "shadow-md" : ""}`}>
           <h1 className=" text-center h-24 md:h-14 lg:h-14 mt-6 font-serif text-4xl">
-            Advocate Kumar Lakshay & Associates
+          Advocate Kumar Laksya & Associates
           </h1>
           <div className=" w-full md:w-[1000px] lg:w-[1000px] h-[1px] bg-black mb-4"></div>
           <nav className="w-full md:w-[550px] lg:w-[550px] h-10">
             <ul className="p-3 flex justify-between font-serif font-thin cursor-pointer">
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link href="services">Our Services</Link>
+                <Link href='services'>
+
+                  Our Services
+                </Link>
               </li>
               {/* <li>News & Updates</li> */}
               <li>
-                <Link href="contact">Contact</Link>
+                <Link href="contact">
+                  Contact
+                </Link>
               </li>
               <li>
-                <Link href="team">Our Team</Link>
+                <Link href="team">
+                  Our Team
+                </Link>
               </li>
               <li>
-                <Link href="about">About</Link>
+                <Link href="about">
+                  About
+                </Link>
               </li>
             </ul>
           </nav>
         </div>
         {children}
-        <p className="text-sm font-serif font-thin text-center p-10">
-          ©2023 by Advocate Kumar Laksya & Associates.
-        </p>
+        <p className="text-sm font-serif font-thin text-center p-10">©2023 by Advocate Kumar Lakshay & Associates.</p>
       </body>
     </html>
   );

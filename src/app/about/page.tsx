@@ -48,7 +48,7 @@ const About = () => {
               Our first and foremost aim is to provide personalized quality
               services to our clients. We take pride in the talent of our
               professionals, their in-depth knowledge, expertise, and the
-              teamwork employed in responding to our clients' needs.
+              teamwork employed in responding to our clients needs.
             </li>
             <li>
               Our attorneys work to help the clients in avoiding their problems,

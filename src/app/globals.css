@@ -33,7 +33,6 @@ body {
   }
 }
 
-
 /* styles/FormGrid.module.css */
 
 .formGrid {
@@ -84,52 +83,49 @@ body {
   border: 1px solid #886d37;
 }
 
-
 /* Services */
 
-.text{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.text {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-.olClass{
-  padding-top:1rem ;
+.olClass {
+  padding-top: 1rem;
   font-size: 18px;
   /* font-weight: 600; */
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-.nestedOl li{
+.nestedOl li {
   padding-left: 2rem;
   /* list-style-type: disc; */
 }
 
-.divStyle{
+.divStyle {
   background-image: url("/images/judge.jpg");
   height: 850px;
   background-size: cover;
   background-position: center;
 }
 
-.div_style_team{
+.div_style_team {
   display: flex;
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 600px
+  height: 600px;
 }
 
-
 @media screen and (max-width: 400px) {
-
-  .formGrid{
+  .formGrid {
     display: flex;
     flex-direction: column;
   }
 
-  .divStyle{
+  .divStyle {
     /* height: 1000px; */
     height: fit-content;
-  background-image: none
+    background-image: none;
   }
-  .div_style_team{
+  .div_style_team {
     height: 300px;
   }
 }
